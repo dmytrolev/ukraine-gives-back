@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Roboto;
+    src: url("css/Roboto-Regular.ttf");
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: beige;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1.tab {
+    display: inline-block;
+    width: 48%;
+    cursor: pointer;
+    background-color: lightblue;
+    border-radius: 20px;
+}
+
+h1.tab.supporter {
+    margin-right: 5px;
+}
+
+h1.tab.current {
+    background-color: lightgreen;
+}
+
+div.page {
+    display: none;
+}
+
+div.page.current {
+    display: block;
+}
+
+i.icon {
+    margin: 0 5px;
+}
+
+i.icon.blood {
+    color: red;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
