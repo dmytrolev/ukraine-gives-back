@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Ukraine gives hack</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/f6ac97263e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+  </head>
+  <body>
+    <h1>Ukrainians give back to the World.</h1>
+    <div>Ukrainian live in diferent places around the world, and they help
+      make them better. We would like to recognize and multiply this effort.
+    </div>
+    <h1 class="tab supporter current" onclick="OpenPage('supporter')">The Supporter</h1><h1 class="tab contributor" onclick="OpenPage('contributor')">The Contributor</h1>
+    <div class="page supporter current">
+      <p>We would like to recognize and highlight the efforts of our
+        compatriots. Every time they do something good for their hosts.</p>
+      <h2>What can I do now?</h2>
+      <p>Help us collect the ideas about how can we give back</p>
+    </div>
+    <div class="page contributor">
+      <p>The world gave us a lot of support and we try to be a good citizens
+      and give back to our loving hosts. We can:
+      <ul>
+        <li><i class="fa-solid fa-droplet icon blood"></i>Donate blood.
+      </ul>
+      Our supporters donate to the Ukrainian funds, every time we do good
+      things.
+      <h2>What can I do now?</h2>
+      <p>Help us by sharing your way to give back to your local community.
+    </div>
+    <script>
+      function OpenPage(nextCurrent) {
+        const pagePrev = document.getElementsByClassName("page current");
+        const tabPrev = document.getElementsByClassName("tab current");
+        const pageNext = document.getElementsByClassName("page " + nextCurrent);
+        const tabNext = document.getElementsByClassName("tab " + nextCurrent);
+
+        pagePrev[0].classList.remove("current");
+        tabPrev[0].classList.remove("current");
+
+        pageNext[0].classList.add("current");
+        tabNext[0].classList.add("current");
+      }
+    </script>
+  </body>
+</html>
